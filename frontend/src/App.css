@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table.table:not(.owner-info-table) th {
+  background-color: #2a2e3f ;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+}
+
+table.table th {
+  font-size: 20px;
+}
+
+table.table td {
+  font-size: 20px;
+}
+
+table.table th:last-child,
+table.table td:last-child {
+  border-right: none;
+}
+
+label {
+  font-size: 20px;
+}
+
+.form-control {
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid lightgray;
+}
+
+.form-control:hover {
+  border-color: gray;
+}
+
+.form-control:focus {
+  border-color: gray;
+  box-shadow: 0 0 8px rgba(128, 128, 128, 0.7); 
+}
+
+
+.find-owner-button, .add-owner-button, .add-pet-button, .edit-owner-button, .update-owner-button, .add-pet-button, .update-pet-button, .add-visit-button {
+  background-color: #2a2e3f;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.find-owner-button:hover, .add-owner-button:hover, .add-pet-button:hover, .edit-owner-button:hover, .update-owner-button:hover, .update-pet-button:hover, .add-visit-button:hover {
+  background-color: #2a2e3f;
+  color: #ffffff;
+}
