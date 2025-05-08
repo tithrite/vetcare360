@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+.navbar {
+  background-color: #2a2e3f !important;
+  margin-bottom: 50px;
+  border-bottom: none;
+  font-family: 'Inter', sans-serif;
+  min-height: 100px;
+  height: 100px;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: lightgreen;
+}
+
+.navbar li > a,
+.navbar-text {
+  font-size: 1.3rem;
+  padding: 0.8rem 1rem;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.navbar li:hover > a,
+.navbar li.active > a {
+  background-color: transparent;
+  color: #d1e7dd;
+}
+
+.navbar li > a.active {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar li > a {
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.navbar li > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar li > a:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1.75rem;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
